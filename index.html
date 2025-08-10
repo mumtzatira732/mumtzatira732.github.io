@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nama Anda — Portfolio</title>
+  <meta name="description" content="Full‑stack developer (Flutter + Laravel) with Firebase, real‑time systems, and AI integration." />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Icons (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root { --card: #ffffff; --bg:#0f172a; --muted:#94a3b8; --ring:#e2e8f0; }
+    body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.08); }
+    .card { background: var(--card); border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(2, 6, 23, 0.15); }
+    .badge { border: 1px solid var(--ring); padding: .25rem .6rem; border-radius: 999px; font-size: .8rem; }
+    .link { text-decoration: none; border-bottom: 1px dashed currentColor; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100">
+  <!-- Header / Hero -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20" aria-hidden="true">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320"><path fill="#38bdf8" fill-opacity="1" d="M0,96L80,90.7C160,85,320,75,480,96C640,117,800,171,960,170.7C1120,171,1280,117,1360,90.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+      <div class="glass rounded-3xl p-8 md:p-12">
+        <div class="flex flex-col md:flex-row md:items-center gap-8">
+          <img src="assets/avatar.png" alt="Your photo" class="w-28 h-28 rounded-2xl object-cover ring-2 ring-cyan-300/40" onerror="this.style.display='none'" />
+          <div>
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight">Nama Anda</h1>
+            <p class="mt-3 text-cyan-200">Full‑stack developer (Flutter + Laravel) with experience in Firebase, real‑time systems, and AI integration.</p>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <span class="badge">Flutter</span>
+              <span class="badge">Laravel</span>
+              <span class="badge">Firebase</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">Git/GitHub</span>
+              <span class="badge">OCR / ML Kit</span>
+              <span class="badge">REST API</span>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <a href="#projects" class="px-5 py-3 bg-cyan-400 text-slate-900 font-semibold rounded-2xl hover:translate-y-[-1px] transition">View Projects</a>
+              <a href="assets/Resume.pdf" class="px-5 py-3 border border-slate-300/30 rounded-2xl hover:bg-slate-800 transition" target="_blank">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 card p-8 text-slate-800">
+        <h2 class="text-2xl font-semibold">About Me</h2>
+        <p class="mt-3 text-slate-600">Tulis ringkasan diri 3–5 ayat. Contoh: Berpengalaman membina aplikasi mudah alih (Flutter) dan web (Laravel), memanfaatkan Firebase untuk autentikasi, storan, dan real‑time messaging. Minat pada integrasi AI/OCR dan automasi notifikasi (FCM/Telegram). Fokus pada kod yang bersih, boleh diselenggara, dan mesra pengguna.</p>
+      </div>
+      <div class="card p-8 text-slate-800">
+        <h3 class="text-xl font-semibold">Contact</h3>
+        <ul class="mt-4 space-y-2 text-slate-600">
+          <li><i data-lucide="mail" class="inline w-4 h-4 mr-2"></i> <a class="link" href="mailto:email@example.com">email@example.com</a></li>
+          <li><i data-lucide="github" class="inline w-4 h-4 mr-2"></i> <a class="link" href="https://github.com/username" target="_blank">github.com/username</a></li>
+          <li><i data-lucide="linkedin" class="inline w-4 h-4 mr-2"></i> <a class="link" href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 pb-6">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl font-semibold">Projects</h2>
+      <a href="#" class="link text-sm" target="_blank">View all repositories →</a>
+    </div>
+
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project Card 1 -->
+      <article class="card overflow-hidden text-slate-800">
+        <img src="assets/mediqtrack.jpg" alt="MediQTrack screenshot" class="w-full h-40 object-cover" onerror="this.style.display='none'" />
+        <div class="p-6">
+          <h3 class="text-lg font-semibold">MediQTrack <span class="text-slate-400 text-sm">(2025)</span></h3>
+          <p class="mt-2 text-slate-600">Mobile & web system untuk pengurusan giliran klinik dengan geolokasi dan notifikasi masa nyata.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="badge">Flutter</span>
+            <span class="badge">Laravel</span>
+            <span class="badge">Firebase</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a href="https://github.com/username/mediqtrack-mobile" target="_blank" class="link">Mobile Repo</a>
+            <a href="https://github.com/username/mediqtrack-web" target="_blank" class="link">Web Repo</a>
+            <a href="#" target="_blank" class="link">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="card overflow-hidden text-slate-800">
+        <img src="assets/ocr.jpg" alt="OCR app screenshot" class="w-full h-40 object-cover" onerror="this.style.display='none'" />
+        <div class="p-6">
+          <h3 class="text-lg font-semibold">OCR Slip (Mini App) <span class="text-slate-400 text-sm">(2025)</span></h3>
+          <p class="mt-2 text-slate-600">Aplikasi OCR untuk ekstrak teks daripada imej menggunakan ML Kit/Cloud Vision, simpan hasil ke Firestore.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="badge">Flutter</span>
+            <span class="badge">ML Kit</span>
+            <span class="badge">Firebase</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a href="https://github.com/username/ocr-mini" target="_blank" class="link">GitHub</a>
+            <a href="#" target="_blank" class="link">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="card overflow-hidden text-slate-800">
+        <img src="assets/pickleboo.jpg" alt="PickleBoo screenshot" class="w-full h-40 object-cover" onerror="this.style.display='none'" />
+        <div class="p-6">
+          <h3 class="text-lg font-semibold">PickleBoo Booking <span class="text-slate-400 text-sm">(2024)</span></h3>
+          <p class="mt-2 text-slate-600">Sistem tempahan gelanggang dengan slot‑based UI, pembayaran, dan pengurusan ahli.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="badge">PHP</span>
+            <span class="badge">MySQL</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a href="https://github.com/username/pickleboo" target="_blank" class="link">GitHub</a>
+            <a href="#" target="_blank" class="link">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 4 -->
+      <article class="card overflow-hidden text-slate-800">
+        <img src="assets/chatbot.jpg" alt="Chatbot screenshot" class="w-full h-40 object-cover" onerror="this.style.display='none'" />
+        <div class="p-6">
+          <h3 class="text-lg font-semibold">HelpLink Chatbot <span class="text-slate-400 text-sm">(2025)</span></h3>
+          <p class="mt-2 text-slate-600">Chatbot FAQ berasaskan API untuk memudahkan pengguna mendapatkan maklumat dengan pantas.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="badge">Laravel</span>
+            <span class="badge">REST API</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a href="https://github.com/username/helplink-chatbot" target="_blank" class="link">GitHub</a>
+            <a href="#" target="_blank" class="link">Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 py-10 text-center text-slate-400">
+    <p>© <span id="y"></span> Nama Anda. Built with Tailwind on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
